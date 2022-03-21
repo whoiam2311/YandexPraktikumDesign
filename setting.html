@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Player</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/setting.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/nav.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/player.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/saved.css'>
+</head>
+<body>
+	<div class="main_main"> 
+		<div class="main">
+			<div class="icons">
+				<a href="account.html" class="icon">
+					<img src="icon/arrow.svg" alt="Back">
+				</a>
+
+				<img src="icon/back.svg" alt="Menu" class="icon">
+			</div>
+		</div>
+		<div class="chapter">
+			<h1>Общее</h1>
+			<div class="menu-items">
+				<div class="item">
+					<div class="title">
+						<h2>Тема оформления</h2>
+					</div>
+					<div class = "next-screen">
+						<h3>Как в системе</h2>
+						<img src="icon/strelka.svg" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="title">
+						<h2>Эквалацзер</h2>
+					</div>
+					<img src="icon/strelka.svg" alt="">
+				</div>
+				<div class="item">
+					<div class="title">
+						<h2>Тема оформления</h2>
+						<h3>Экран будет включен при загрузке треков</h3>
+					</div>
+					<img src="icon/switch.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="chapter" style="margin-top: 32px;">
+			<h1>Интернет </h1>
+			<div class="menu-items">
+				<div class="item">
+					<div class="title">
+						<h2>Экономика трафика</h2>
+					</div>
+					<img src="icon/switchOff.svg" alt="">
+				</div>
+				<div class="item">
+					<button class="button-item" id="SavedCurrent">
+						<div class="title" style="width: 307px;">
+							<h2>Хранилище и загрузка</h2>
+						</div>
+						<img src="icon/strelka.svg" alt="" style="margin-left: 23px;">
+					</button>
+				</div>
+				<div class="item">
+					<div class="title">
+						<h2>Высокое качество звука</h2>
+						<h3>Доступно при высокой скорости интернета</h3>
+					</div>
+					<img src="icon/switch.svg" alt="">
+				</div>
+
+				<div class="item">
+					<div class="title">
+						<h2>Видеофоны в плеере</h2>
+						<h3>Видеошоты в плеере при прослушивании музыки</h3>
+					</div>
+					<img src="icon/switch.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="chapter" style="margin-top: 32px;">
+			<h1>Контент для взрослых</h1>
+			<div class="menu-items">
+				<div class="item" style="margin-top: 12px;">
+					<div class="title">
+						<h2>Детский режим</h2>
+						<h3>Показываются детские песни и образовательные подкасты</h3>
+					</div>
+					<img src="icon/switchOff.svg" alt="">
+				</div>
+				<div class="item">
+					<div class="title">
+						<h2>Разрешить контент для взрослых</h2>
+						<h3>Доступ к трекам с пометкой «E»</h3>
+					</div>
+					<img src="icon/switch.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="saved player-hidden">
+
+		<button class="player-visibility-btn" id="visBtn">
+			<div class="player-visibility-btn_line"></div>
+		</button>
+
+		<div class="chapters">
+			<h1>Автозагрузка треков</h1>
+			<div class="menu-items-auto">
+				<div class="item-auto">
+						<img src="icon/wifi.svg" alt="">
+						<h2 style="color: #FFFFFF;">Моб. интернет и Wi-Fi</h2>
+				</div>
+				<div class="item-auto">
+					<img src="icon/wifiOff.svg" alt="">
+					<h2>Только по Wi-Fi</h2>
+				</div>
+				<div class="item-auto">
+					<img src="icon/cloudOff.svg" alt="">
+					<h2>Оффлайн-режим</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="chapters">
+			<h1>Скорость загрузки</h1>
+			<div class="menu-items">
+				<div class="item-check">
+					<img src="icon/checkRoundOff.svg" alt="">
+					<div class="title-check">
+						<h2>Низкая</h2>
+					</div>
+				</div>
+				<div class="item-check">
+					<img src="icon/checkRoundOff.svg" alt="">
+					<div class="title-check">
+						<h2>Средняя</h2>
+					</div>
+				</div>
+				<div class="item-check">
+					<img src="icon/checkRound.svg" alt="">
+					<div class="title-check">
+						<h2>Высокая</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="chapters">
+			<h1>Хранилище</h1>
+			<div class="menu-items">
+				<img src="icon/Progress.svg" alt="">
+				<div class="item-storage">
+					<svg viewBox="0 0 80 80" width="16" height="16">
+						<circle class="circle-on" cx="40" cy="40" r="38"/>
+					  </svg>
+					<div class="title-storage">
+						<h2>Другие приложения: 46,37 Гб</h2>
+					</div>
+				</div>
+				<div class="item-storage">
+					<svg viewBox="0 0 80 80" width="16" height="16">
+						<circle class="circle-music" cx="40" cy="40" r="38"/>
+					  </svg>
+					<div class="title-storage">
+						<h2>Музыка: 4,49 Гб</h2>
+					</div>
+				</div>
+				<div class="item-storage" style="border-bottom: 1px solid #535353; padding-bottom: 24px;">
+					<svg viewBox="0 0 80 80" width="16" height="16">
+						<circle class="circle-blue" cx="40" cy="40" r="38"/>
+					  </svg>
+					<div class="title-storage">
+						<h2>Свободно: 27, 11 Гб</h2>
+					</div>
+				</div>
+				<!-- <div class="item-storage" style="margin-top: 12px;">
+					<img src="icon/delete.svg" alt="">
+					<div class="title-check">
+						<h2  style="color: #C5467E;">Удалить скачанный контент</h2>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<script src="js/saved.js"></script>
+</body>
+</html>
