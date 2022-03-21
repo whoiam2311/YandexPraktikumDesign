@@ -271,3 +271,9 @@ input::-moz-placeholder {
 	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 	margin-bottom: calc(100vh - 680px)
 }
+
+.button-keyboard {
+	width: 114px;
+    margin-top: 254px;
+    position: absolute;
+}

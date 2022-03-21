@@ -8,11 +8,12 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/home.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/nav.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/player.css'>
 </head>
 <body>
 	<div class="main_main"> 
 		<div class="search-line">
-			<div class="search-search">
+			<div class="search-search" id="trackCurrent">
 				<button class="search" >
 				<div class="search-icons-loop">
 					<img src="icon/search-loop.svg" alt="" class="search_icon">
@@ -97,7 +98,13 @@
 			<img src="icon/serchActive.svg" alt="" class="img_cover">
 		</a>
 	</nav>
-	<img src="img/iPhone X Keyboard.png" alt="" class="keyboard keyboard-hidden">
+	<div class="keyboard keyboard-hidden">
+		<img src="img/iPhone X Keyboard.png" alt="">
+		<button class="player-visibility-btn button-keyboard" id="visBtn">
+			<div class="player-visibility-btn_line"></div>
+		</button>
+	</div>
+	<script src="js/keyboard.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="slick-1.8.1/slick/slick.js"></script>
