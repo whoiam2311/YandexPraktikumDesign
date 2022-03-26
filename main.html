@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Test</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/home.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/nav.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/player.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/account.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/saved.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/setting.css'>
+	
+</head>
+<body>
+	<main>
+		<div class="slide" id="slide1">
+			<!-- <button id="s1b">></button> -->
+			<div class="main-window-home" > 
+				<div class="search-line">
+					<div class="search-search">
+						<button class="search" id="searchCurrent">
+						<div class="search-icons-loop">
+							<img src="icon/search-loop.svg" alt="" class="search_icon">
+						</div>
+						<div class="search-icon-micro">
+							<img src="icon/microphone.svg" alt="" class="search-micro">
+						</div>
+						<input type = "search" id="search" placeholder="Трек, подкаст, автор" oninput="filterContent(this)">
+						</button>
+					<button class="account-img" id="s1b">
+						<img src="icon/account.svg" alt="">
+					</button>
+					</div>
+				</div>
+			<div id="visBtn" class="main">
+				  
+				<div class="albums-list">
+					<div class="albums-list_header">
+						<h2>Вы недавно искали</h2>
+					</div>
+					<div class="slider">
+						<a href="album.html" class="slider_items">
+							<img src="img/abba.png" alt="" class="img_cover">
+							<p class="text_items">Возвращение Abba, новый альбом Voyage</p>
+						</a>
+						<a href="album.html" class="slider_items">
+							<img src="img/spin.png" alt="" class="img_cover">
+					<p class="text_items">Spin Doctors, Pocket Full</p>
+						</a>
+						<a href="album.html" class="slider_items">
+							<img src="img/rammstein.png" alt="" class="img_cover">
+					<p class="text_items">Rammstein – Mutter</p>
+						</a>
+						<a href="album.html" class="slider_items">
+							<img src="img/disco.png" alt="" class="img_cover">
+					<p class="text_items">Диско 90х</p>
+						</a>
+						<a href="album.html" class="slider_items">
+							<img src="img/cover.png" alt="" class="img_cover">
+							<p class="text_items">В наушниках осень</p>
+						</a>
+					</div>
+					
+				</div>
+		
+				<h2>Часто ищут</h2>
+				<div class="banner-cover">
+					<div class="banner-cover-little" style="background-image: url(img/linkin.png);">
+						<div class="banner-cover-pod">
+							<h1>Linkin Park, лучшие альбомы</h1>
+						</div>
+					</div>
+					<div class="banner-cover-little" style="background-image: url(img/billie.png);">
+						<div class="banner-cover-pod">
+							<h1>Billie Eilish</h1>
+						</div>
+					</div>
+					<div class="banner-cover-big">
+						<div class="banner-pod">
+							<h2>Подкаст</h2>
+							<h1>Дизайн такой</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<nav>
+				<a href=" index.html">
+					<img src="icon/NoActiveStar.svg" alt="" class="img_cover">
+				</a>
+				<a href="album.html">
+					<img src="icon/player.svg" alt="" class="img_cover">
+				</a>
+				<a href="#">
+					<img src="icon/bookmark.svg" alt="" class="img_cover">
+				</a>
+				<a href="#">
+					<img src="icon/serchActive.svg" alt="" class="img_cover">
+				</a>
+			</nav>
+			<div class="keyboard keyboard-hidden">
+				<img src="img/iPhone X Keyboard.svg" alt="">
+			</div>
+		</div>
+		<div class="slide right" id="slide2">
+			<div class="header-back-wrapper">
+				<div class="icons">
+					<button id="s2b1">
+						<img src="icon/arrow.svg" alt="Back">
+					</button>
+	
+					<img src="icon/back.svg" alt="Menu">
+				</div>
+			</div>
+			<div class="main-window account">
+		<div class="bg">
+			<div class="profile">
+				<img src="img/Avatar.png" alt="avatar" class="avatar">
+				<h1>Inga Atamanova</h1>
+				<div class="button">
+					<p>Мой профиль</p>
+				</div>
+			</div>
+		</div>
+		<div class="menu-items">
+			<div class="item">
+				<div class="title">
+					<h2>Уточнить предпочтения</h2>
+				</div>
+				<img src="icon/strelka.svg" alt="">
+			</div>
+		</div>
+		<div class="menu-items">
+			<div class="item">
+				<div class="title">
+					<h2>Настроить подписку</h2>
+					<h3>Активна до 28.03.2022</h3>
+				</div>
+				<img src="icon/strelka.svg" alt="">
+			</div>
+		</div>
+		<div class="menu-items">
+			<div class="item" id="s2b2">
+				<div class="title">
+					<h2>Настроить приложение</h2>
+				</div>
+				<img src="icon/strelka.svg" alt="">
+			</div>
+		</div>
+		<div class="menu-items">
+			<div class="item">
+				<div class="title">
+					<h2>Рассказать друзьям</h2>
+				</div>
+				<img src="icon/strelka.svg" alt="">
+			</div>
+		</div>
+		<div class="menu-items">
+			<div class="item">
+				<div class="title">
+					<h2>О приложении</h2>
+					<h3>Версия 6.73</h3>
+				</div>
+				<img src="icon/strelka.svg" alt="">
+			</div>
+		</div>
+	</div>
+		</div>
+		<div class="slide right" id="slide3">
+			<!-- <button id="s3b"><</button> -->
+			<div class="main-window"> 
+				<div class="nav">
+					<div class="icons">
+						<button id="s3b">
+							<img src="icon/arrow.svg" alt="Back">
+						</button>
+		
+						<img src="icon/back.svg" alt="Menu">
+					</div>
+				</div>
+				<div class="chapter">
+					<h1>Общее</h1>
+					<div class="menu-items">
+						<div class="item-setting">
+							<div class="title">
+								<h2>Тема оформления</h2>
+							</div>
+							<div class = "next-screen">
+								<h3>Как в системе</h2>
+								<img src="icon/strelka.svg" alt="">
+							</div>
+						</div>
+						<div class="item-setting">
+							<div class="title">
+								<h2>Эквалайзер</h2>
+							</div>
+							<img src="icon/strelka.svg" alt="">
+						</div>
+						<div class="item-setting">
+							<div class="title">
+								<h2>Тема оформления</h2>
+								<h3>Экран будет включен при загрузке треков</h3>
+							</div>
+							<img src="icon/switch.svg" alt="">
+						</div>
+					</div>
+				</div>
+		
+				<div class="chapter" style="margin-top: 32px;">
+					<h1>Интернет </h1>
+					<div class="menu-items">
+						<div class="item-setting">
+							<div class="title">
+								<h2>Экономика трафика</h2>
+							</div>
+							<img src="icon/switchOff.svg" alt="">
+						</div>
+						<div class="item-setting">
+							<div class="button-item" id="SavedCurrent">
+								<div class="title" style="width: 317px;">
+									<h2>Хранилище и загрузка</h2>
+								</div>
+								<img src="icon/strelka.svg" alt="">
+							</div>
+						</div>
+						<div class="item-setting">
+							<div class="title">
+								<h2>Высокое качество звука</h2>
+								<h3>Доступно при высокой скорости интернета</h3>
+							</div>
+							<img src="icon/switch.svg" alt="">
+						</div>
+		
+						<div class="item-setting">
+							<div class="title">
+								<h2>Видеофоны в плеере</h2>
+								<h3>Видеошоты в плеере при прослушивании музыки</h3>
+							</div>
+							<img src="icon/switch.svg" alt="">
+						</div>
+					</div>
+				</div>
+		
+				<div class="chapter" style="margin-top: 32px;">
+					<h1>Контент для взрослых</h1>
+					<div class="menu-items">
+						<div class="item-setting" style="margin-top: 12px;">
+							<div class="title">
+								<h2>Детский режим</h2>
+								<h3>Показываются детские песни и образовательные подкасты</h3>
+							</div>
+							<img src="icon/switchOff.svg" alt="">
+						</div>
+						<div class="item-setting">
+							<div class="title">
+								<h2>Разрешить контент для взрослых</h2>
+								<h3>Доступ к трекам с пометкой «E»</h3>
+							</div>
+							<img src="icon/switch.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="saved player-hidden">
+		
+				<button class="player-visibility-btn" id="visBtnSett">
+					<div class="player-visibility-btn_line"></div>
+				</button>
+		
+				<div class="chapters">
+					<h1>Автозагрузка треков</h1>
+					<div class="menu-items-auto">
+						<div class="item-auto">
+								<img src="icon/wifi.svg" alt="">
+								<h2 style="color: #FFFFFF;">Моб. интернет и Wi-Fi</h2>
+						</div>
+						<div class="item-auto">
+							<img src="icon/wifiOff.svg" alt="">
+							<h2>Только по Wi-Fi</h2>
+						</div>
+						<div class="item-auto">
+							<img src="icon/cloudOff.svg" alt="">
+							<h2>Оффлайн-режим</h2>
+						</div>
+					</div>
+				</div>
+		
+				<div class="chapters">
+					<h1>Скорость загрузки</h1>
+					<div class="menu-items">
+						<div class="item-check">
+							<img src="icon/checkRoundOff.svg" alt="">
+							<div class="title-check">
+								<h2>Низкая</h2>
+							</div>
+						</div>
+						<div class="item-check">
+							<img src="icon/checkRoundOff.svg" alt="">
+							<div class="title-check">
+								<h2>Средняя</h2>
+							</div>
+						</div>
+						<div class="item-check">
+							<img src="icon/checkRound.svg" alt="">
+							<div class="title-check">
+								<h2>Высокая</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+		
+				<div class="chapters">
+					<h1>Хранилище</h1>
+					<div class="menu-items">
+						<img src="icon/Progress.svg" alt="">
+						<div class="item-storage">
+							<svg viewBox="0 0 80 80" width="16" height="16">
+								<circle class="circle-on" cx="40" cy="40" r="38"/>
+							  </svg>
+							<div class="title-storage">
+								<h2>Другие приложения: 46,37 Гб</h2>
+							</div>
+						</div>
+						<div class="item-storage">
+							<svg viewBox="0 0 80 80" width="16" height="16">
+								<circle class="circle-music" cx="40" cy="40" r="38"/>
+							  </svg>
+							<div class="title-storage">
+								<h2>Музыка: 4,49 Гб</h2>
+							</div>
+						</div>
+						<div class="item-storage" style="border-bottom: 1px solid #535353; padding-bottom: 24px;">
+							<svg viewBox="0 0 80 80" width="16" height="16">
+								<circle class="circle-blue" cx="40" cy="40" r="38"/>
+							  </svg>
+							<div class="title-storage">
+								<h2>Свободно: 27, 11 Гб</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/saved.js"></script>
+	<script src='main.js'></script>
+	<script src="js/keyboard.js"></script>
+	<script src="js/player.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="slick-1.8.1/slick/slick.js"></script>
+	<script src="slick-1.8.1/slick/slick.min.js"></script>
+	<script src='js/add_slider.js'></script>
+</body>
+</html>

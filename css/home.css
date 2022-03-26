@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&display=swap');
 
 main {
+	/* margin-top: 60px; */
+	width: 375px;
+	/* padding: 0 16px; */
+	background-color: #252A2E;
+	/* padding-top: 69px / 41px */
+	/* padding-top: 39px; */
+	/* padding-bottom: 80px; */
+	overflow: hidden;
+}
+
+.main {
 	margin-top: 60px;
 	width: 375px;
 	padding: 0 16px;
@@ -37,7 +48,7 @@ main {
 
 }
 
-.banner-main {
+.banner-cover-big {
 	height: 343px;
 	width: 343px;
 	/* Тут адрес к фону баннера */
@@ -47,32 +58,31 @@ main {
 	background-color: #01B3F3;
 	border-radius: 8px;
 	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.banner {
-	padding: 16px;
-	color: white;
-	/* margin-bottom: 27px;  */
-}
-
-.banner h2 {
+/* .banner-pod h2 {
 	font-size: 26px;
 	font-weight: 500;
 	line-height: 37px;
 	margin-bottom: 16px;
 }
 
-.banner p {
+.banner-pod p {
 	width: 175px;
 	font-size: 16px;
 	line-height: 20px;
-}
+} */
 
 .banner-pod {
 	border-radius: 0px 0px 8px 8px; 
 	margin-top: 231px;
-	background: #332F22;
-	opacity: 0.4;
+	background: rgba(51, 47, 34, 0.4);
+	/* opacity: 0.4; */
 	width: 343px;
 	height: 80px;
 	padding: 18px;
@@ -81,6 +91,8 @@ main {
 	font-weight: 400;
 	font-style: normal;
 	text-transform: uppercase;
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
 }
 
 .banner-pod h2 {
@@ -95,10 +107,11 @@ main {
 }
 
 .banner-cover {
-	display: flex;
+	display: grid;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 	margin-top: 16px;
+	grid-template-columns: 2fr;
 
 }
 
@@ -108,22 +121,25 @@ main {
 	height: 50px;
 	width: 200px;
 	background: rgba(51, 47, 34, 0.4);
+	-webkit-backdrop-filter: blur(15px);
 	backdrop-filter: blur(40px);
 	/* opacity: 0.4; */
 	color:#FFFFFF;
 	font-family: 'Jost';
 	font-weight: 400;
 	font-style: normal;
+	display: flex;
+	align-items: center;
 }
 
 .banner-cover-pod h1 {
 	font-size: 13.5px;
 	line-height: 17px;
-	height: 7em;
+	/* height: 7em; */
 }
 
 
-.banner-cover-main {
+.banner-cover-little {
 	border-radius: 8px;
 	width: 167px;
 	height: 200px;
@@ -136,15 +152,21 @@ main {
 
 /* Slider */
 
+.slide {
+	width: 375px;
+}
+
 .slider_items {
     top: 17px;
     margin-right: 14px;
 	cursor: pointer;
 }
+
 .slick-track {
     display: flex;
     align-items: flex-start;
 }
+
 .slider{
     margin-top: 14px;
 }
@@ -163,9 +185,7 @@ main {
 	height: 34px;
 }
 
-.img_cover{
-	border-radius: 8px;
-}
+/* Slider */
 
 .search-line {
 	display: flex;
@@ -176,12 +196,10 @@ main {
 	position: absolute;
 	width: 375px;
 	height: 112px;
-	/* top: 44px; */
-
-background: #252A2E;
+	background: #252A2E;
 }
 
-.account {
+.account-img {
 	margin-left: 15px;
 }
 
@@ -257,8 +275,6 @@ input::-moz-placeholder {
 .keyboard-hidden {
 	bottom: -100vh;
 }
-/* /slider */
-
 
 .keyboard {
 	width: 375px;
@@ -276,4 +292,12 @@ input::-moz-placeholder {
 	width: 114px;
     margin-top: 254px;
     position: absolute;
+}
+
+.hide {
+	opacity: 0;
+}
+
+.input-keyboard {
+	width: 343px;
 }

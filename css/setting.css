@@ -1,4 +1,4 @@
-.main_main {
+.main-window {
 	background: #252A2E;
 	height: 680px;
 }
@@ -34,7 +34,7 @@
 	height: 56px;
 }
 
-.item h3 {
+.item-setting h3 {
 	font-weight: 400;
 	font-size: 14px;
 	color: #787D81;
@@ -64,4 +64,14 @@
 	font-size: 12px;
 	line-height: 17px;
 	color: #787D81;
+}
+
+.item-setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFFFFF;
+	font-family: 'Jost';
+	font-style: normal;
+	height: 56px;
 }

@@ -1,21 +1,19 @@
-let track = document.querySelector('#trackCurrent'),
-	player = document.querySelectorAll('.player'),
-	visBtn = document.querySelector('#visBtn');
+let track = document.querySelector("#trackCurrent"),
+  player = document.querySelectorAll(".player"),
+  visBtn = document.querySelector("#visBtn");
 
 track.onclick = () => {
-	player[0].classList.toggle('player-hidden');
-	player[0].classList.toggle('player-showen');
-}
-visBtn.onclick = () => {
-	player[0].classList.toggle('player-hidden');
-	player[0].classList.toggle('player-showen');
+  player[0].classList.toggle("player-hidden");
+  player[0].classList.toggle("player-showen");
 };
 
-
+visBtn.onclick = () => {
+  player[0].classList.toggle("player-hidden");
+  player[0].classList.toggle("player-showen");
+};
 
 // document.addEventListener('touchstart', handleTouchStart, false);
 // document.addEventListener('touchmove', handleTouchMove, false);
-
 
 // let x1 = null;
 // let y1 = null;
@@ -38,7 +36,7 @@ visBtn.onclick = () => {
 //     let yDiff = y2 - y1;
 
 //     if (Math.abs(xDiff) < Math.abs(yDiff)) {
-//         if (yDiff > 0) 
+//         if (yDiff > 0)
 //         {
 //             player[0].classList.toggle('player-hidden');
 //         }

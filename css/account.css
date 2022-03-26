@@ -2,17 +2,16 @@
 
 .account {
 	background: #252A2E;
-	height: 680px;
+	/* height: 680px; */
 }
+
 .bg {
 	height: 329px;
 	width: 375px;
 	left: 0%;
 	right: 0%;
 	top: 0px;
-
 	background: linear-gradient(180.08deg, rgba(37, 42, 46, 0) 8.33%, #252A2E 99.93%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_account.png);
-	/* filter: blur(54px); */
 }
 
 .icons {
@@ -23,7 +22,13 @@
 }
 
 .header-back-wrapper {
-	padding: 16px;
+	flex-direction: row;
+    align-items: center;
+    /* padding: 16px; */
+    z-index: 100;
+    position: absolute;
+    width: 375px;
+    height: 68px;
 }
 
 .item {
@@ -54,7 +59,13 @@
 	color: #FFFFFF;
 	font-family: 'Jost';
 	font-style: normal;
+	display: flex;
+	flex-direction: column;
+	margin-left: 115px;
+	margin-top: 96px;
+	position: absolute;
 }
+
 .profile h1{
 	text-align: center;
 	font-weight: 500;

@@ -1,12 +1,15 @@
-let track = document.querySelector('#trackCurrent'),
-	player = document.querySelectorAll('.keyboard'),
+let search = document.querySelector('#searchCurrent'),
+	keyboard = document.querySelectorAll('.keyboard'),
 	visBtn = document.querySelector('#visBtn');
+	// account = document.querySelector('.account');
 
-track.onclick = () => {
-	player[0].classList.toggle('keyboard-hidden');
-	player[0].classList.toggle('keyboard-showen');
+search.onclick = () => {
+	// account[0].classList.add('hide');
+	keyboard[0].classList.remove('keyboard-hidden');
+	keyboard[0].classList.add('keyboard-showen');
 }
 visBtn.onclick = () => {
-	player[0].classList.toggle('keyboard-hidden');
-	player[0].classList.toggle('keyboard-showen');
+	keyboard[0].classList.add('keyboard-hidden');
+	keyboard[0].classList.remove('keyboard-showen');
+	// acc[0].classList.remove('hide');
 };

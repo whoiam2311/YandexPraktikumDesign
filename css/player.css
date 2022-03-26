@@ -1,9 +1,8 @@
-body {
+body-player {
 	height: 100vh;
 }
 
 .player {
-/* 	width: 100vw; */
 	width: 375px;
 	height: 650px;
 	display: flex;
@@ -45,7 +44,6 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	/* margin-bottom: 45px; */
 	margin-bottom: 5%;
 }
 

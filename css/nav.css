@@ -4,7 +4,7 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 22px;
-	/* position: fixed; */
-	bottom: 0;
+	position: fixed;
+	/* bottom: 0; */
 	background-color: #22262B;
 }

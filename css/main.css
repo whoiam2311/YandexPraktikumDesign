@@ -2,11 +2,11 @@
 
 body {
 	width: 375px;
+	/* height: 680px; */
 	margin: 0;
-/* 	background-color: #252A2E; */
 	background-color: white;
 	font-family: 'Jost', sans-serif;
-    	font-weight: 400;
+    font-weight: 400;
 	margin-left: calc((100% - 375px)/2);
 }
 
@@ -31,7 +31,21 @@ button {
 	box-sizing: border-box;
 }
 
-.main_main{
+.main-window-home{
 	height: 600px;
     overflow: auto;
+	/* hiding scrollbar for firefox */
+	scrollbar-width: none;
+}
+
+.main-window{
+	height: 710px;
+    overflow: auto;
+	/* hiding scrollbar for firefox */
+	scrollbar-width: none;
+}
+
+/* hiding scrollbar for chrome, opera, etc */
+.main-window::-webkit-scrollbar {
+	display: none;
 }

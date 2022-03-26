@@ -11,10 +11,10 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='css/player.css'>
 </head>
 <body>
-	<div class="main_main"> 
+	<div class="main-window" > 
 		<div class="search-line">
-			<div class="search-search" id="trackCurrent">
-				<button class="search" >
+			<div class="search-search" id="searchCurrent">
+				<button class="search">
 				<div class="search-icons-loop">
 					<img src="icon/search-loop.svg" alt="" class="search_icon">
 				</div>
@@ -28,12 +28,11 @@
 			</a>
 			</div>
 		</div>
-	<main>
+	<main id="visBtn">
 		  
 		<div class="albums-list">
 			<div class="albums-list_header">
 				<h2>Вы недавно искали</h2>
-				<!-- <a href="album.html">Смотреть все</a> -->
 			</div>
 			<div class="slider">
 				<a href="album.html" class="slider_items">
@@ -62,24 +61,21 @@
 
 		<h2>Часто ищут</h2>
 		<div class="banner-cover">
-			<div class="banner-cover-main" style="background-image: url(img/linkin.png);">
+			<div class="banner-cover-little" style="background-image: url(img/linkin.png);">
 				<div class="banner-cover-pod">
 					<h1>Linkin Park, лучшие альбомы</h1>
 				</div>
 			</div>
-			<div class="banner-cover-main" style="background-image: url(img/billie.png);">
+			<div class="banner-cover-little" style="background-image: url(img/billie.png);">
 				<div class="banner-cover-pod">
 					<h1>Billie Eilish</h1>
 				</div>
 			</div>
-		</div>
-
-		<div class="banner-main">
-			<div class="banner">
-			</div>
-			<div class="banner-pod">
-				<h2>Подкаст</h2>
-				<h1>Дизайн такой</h1>
+			<div class="banner-cover-big">
+				<div class="banner-pod">
+					<h2>Подкаст</h2>
+					<h1>Дизайн такой</h1>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -98,11 +94,11 @@
 			<img src="icon/serchActive.svg" alt="" class="img_cover">
 		</a>
 	</nav>
-	<div class="keyboard keyboard-hidden">
-		<img src="img/iPhone X Keyboard.png" alt="">
-		<button class="player-visibility-btn button-keyboard" id="visBtn">
+	<div class="keyboard keyboard-hidden" id="visBtn">
+		<img src="img/iPhone X Keyboard.svg" alt="">
+		<!-- <button class="player-visibility-btn button-keyboard" id="visBtn">
 			<div class="player-visibility-btn_line"></div>
-		</button>
+		</button> -->
 	</div>
 	<script src="js/keyboard.js"></script>
 
