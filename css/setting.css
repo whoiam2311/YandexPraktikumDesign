@@ -42,8 +42,10 @@
 
 .button-item {
 	display: flex;
-	text-align: left;
-	align-items: center;
+    text-align: left;
+    align-items: center;
+    width: 343px;
+    justify-content: space-between;
 }
 
 .next-screen {
