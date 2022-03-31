@@ -53,7 +53,7 @@ nav {
 .screen {
 	/* height: 600px; */
 	position: absolute;
-	transition: ease-in-out .3s;
+	transition: ease-in-out 0s;
 }
 
 .right {
@@ -64,14 +64,14 @@ nav {
 	transform: translateX(-100%);
 }
 
-.main-window-home{
+.main-window-home {
 	height: 600px;
     overflow: auto;
 	/* hiding scrollbar for firefox */
 	scrollbar-width: none;
 }
 
-.main-window{
+.main-window {
 	height: 710px;
     overflow: auto;
 	/* hiding scrollbar for firefox */

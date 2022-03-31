@@ -10,7 +10,7 @@
 	position: fixed;
 	border-radius: 50px 50px 0 0;
 	padding: 0 16px;
-	transition: .3s ease-in-out;
+	transition: 0s ease-in-out;
 	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 	margin-bottom: calc(100vh - 688px);
 }
@@ -39,7 +39,7 @@
 
 }
 
-.item-auto{
+.item-auto {
 	display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -81,14 +81,14 @@
 	margin-top: 12px;
 }
 
-.title-check h2{
+.title-check h2 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 23px;
 	margin-left: 12px;
 }
 
-.title-storage h2{
+.title-storage h2 {
 	font-size: 14px;
 	line-height: 20px;
 	margin-left: 12px;
