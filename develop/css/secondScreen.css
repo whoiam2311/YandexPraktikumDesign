@@ -1,0 +1,99 @@
+/* второй экран */
+
+.account {
+	background: #252A2E;
+}
+
+.second-screen-bg {
+	height: 329px;
+	width: 375px;
+	left: 0%;
+	right: 0%;
+	top: 0px;
+	background: linear-gradient(180.08deg, rgba(37, 42, 46, 0) 8.33%, #252A2E 99.93%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_account.png);
+}
+
+.header-back-wrapper-icons {
+	margin-top: 44px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.header-back-wrapper {
+	flex-direction: row;
+    align-items: center;
+    z-index: 100;
+    width: 375px;
+    height: 68px;
+}
+
+.second-screen-header {
+	position: absolute;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFFFFF;
+	font-family: 'Jost';
+	font-style: normal;
+	padding: 16px;
+	height: 56px;
+}
+
+.menu-title h2 {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.menu-title h3 {
+	font-size: 12px;
+	line-height: 17px;
+	color: #787D81;
+}
+
+.second-screen-profile {
+	font-family: 'Jost';
+	font-style: normal;
+	display: flex;
+	flex-direction: column;
+	margin-left: 115px;
+	margin-top: 96px;
+	position: absolute;
+}
+
+.second-screen-profile h1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 32px;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.second-screen-profile p {
+	font-size: 12px;
+	padding: 7px;
+}
+
+.my-account-button {
+	margin-top: 16px;
+	display: block;
+  	margin: 0 auto;
+	text-align: center;
+	background: #2C3136;
+	border-radius: 100px;
+	width: 101px;
+	height: 33px;
+}
+
+.avatar {
+	width: 96px;
+	height: 96px;
+	display: block;
+  	margin: 0 auto;
+}

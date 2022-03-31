@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost');
+
+/* Основные настройки  */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+main {
+	width: 375px;
+	height: 680px;
+	background-color: #252A2E;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+p, h1, h2, h3 {
+	margin: 0;
+	color: white;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+nav {
+	width: 375px;
+	height: 80px;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 22px;
+	position: fixed;
+	bottom: 0;
+	background-color: #22262B;
+	margin-bottom: calc(100vh - 688px)
+}
+
+.screen {
+	/* height: 600px; */
+	position: absolute;
+	transition: ease-in-out .3s;
+}
+
+.right {
+	transform: translateX(100%);
+}
+
+.left {
+	transform: translateX(-100%);
+}
+
+.main-window-home{
+	height: 600px;
+    overflow: auto;
+	/* hiding scrollbar for firefox */
+	scrollbar-width: none;
+}
+
+.main-window{
+	height: 710px;
+    overflow: auto;
+	/* hiding scrollbar for firefox */
+	scrollbar-width: none;
+}
+
+/* hiding scrollbar for chrome, opera, etc */
+.main-window::-webkit-scrollbar {
+	display: none;
+}
+
+/* hiding scrollbar for chrome, opera, etc */
+.main-window-home::-webkit-scrollbar {
+	display: none;
+}
+
+.hide {
+	opacity: 0;
+}

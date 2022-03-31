@@ -1,0 +1,275 @@
+/* первыйй экран */
+
+.first-screen-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 16px;
+	z-index: 100; 
+	position: fixed;
+	width: 375px;
+	height: 112px;
+	background: #252A2E;
+}
+
+.first-screen-body {
+	margin-top: 60px;
+	width: 375px;
+	padding: 0 16px;
+	background-color: #252A2E;
+	padding-top: 39px;
+	overflow: hidden;
+}
+
+/* Обложкии альбомов */
+.albums-list {
+	padding-bottom: 22px;
+	margin-bottom: 27px;
+	border-bottom: 1px solid #535353;
+	margin-left: 5px;
+}
+
+.albums-list_header {
+	width: 100%;
+	height: 32px;
+	margin-top: 27px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.albums-list_header h2 {
+	font-size: 22px;
+}
+
+.albums-list_header a {
+	font-size: 15px;
+	color: #C5467E;
+
+}
+
+.banner-cover-big {
+	height: 343px;
+	width: 343px;
+	/* Тут адрес к фону баннера */
+	background-image: url(../img/banner.png);
+	background-size: cover;
+	background-position: center;
+	background-color: #01B3F3;
+	border-radius: 8px;
+	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.banner-pod {
+	border-radius: 0px 0px 8px 8px; 
+	margin-top: 231px;
+	background: rgba(51, 47, 34, 0.4);
+	width: 343px;
+	height: 80px;
+	padding: 18px;
+	color:#FFFFFF;
+	font-family: 'Jost';
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+}
+
+.banner-pod h2 {
+	font-size: 13.5px;
+	opacity: 0.6;
+}
+
+.banner-pod h1 {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.banner-cover {
+	display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+	margin-top: 16px;
+	grid-template-columns: 2fr;
+
+}
+
+.banner-cover-pod {
+	padding: 8px;
+	border-radius: 0px 0px 8px 8px;
+	height: 50px;
+	width: 200px;
+	background: rgba(51, 47, 34, 0.4);
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(40px);
+	color:#FFFFFF;
+	font-family: 'Jost';
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	align-items: center;
+}
+
+.banner-cover-pod h1 {
+	font-size: 13.5px;
+	line-height: 17px;
+}
+
+
+.banner-cover-little {
+	border-radius: 8px;
+	width: 167px;
+	height: 200px;
+	display: flex;
+    align-items: flex-end;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Slider */
+
+.slide {
+	width: 375px;
+}
+
+.slider_items {
+    top: 17px;
+    margin-right: 14px;
+	cursor: pointer;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider{
+    margin-top: 14px;
+}
+
+.text_items {
+    /* Playlist-name */
+	font-family: Jost;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13.5px;
+	line-height: 17px;
+	margin-top: 7px;
+	/* or 126% */
+	color: #FFFFFF;
+	width: 136px;
+	height: 34px;
+}
+
+/* Строка поиска */
+
+.account-icon {
+	margin-left: 15px;
+}
+
+.search {
+	background-color: #393c42;
+	width: 299px;
+	height: 36px;
+	border-radius:10px;
+	position: relative;
+}
+
+.search-line {
+	margin-top: 44px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.search input#search{
+	background-color: #393c42;
+	color: #FFFFFF;
+	border: none;
+	width: 299px;
+	height: 36px;
+	border-radius:10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+input::-webkit-input-placeholder {
+	margin-left: 30px;
+	color: #EBEBF599; 
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 22px;
+}
+input::-moz-placeholder { 
+	margin-left: 30px;
+	color: #EBEBF599; 
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 22px;
+}
+
+/* Иконки строки поиска */
+
+.search-line-glass{
+	position: absolute;
+	top: 10px;
+	margin-left: 8px;
+}
+
+.search-icon-micro {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.search-icons-loop {
+	display: flex;
+}
+
+.search-line-micro {
+	position: absolute;
+	top: 10px;
+	margin-right: 8px;
+}
+
+/* Выезжающая клавиатура */
+
+
+/* Стиль для активного элемена */
+.showen {
+	bottom: 0vh;
+}
+
+/* Стиль для спрятанного элемена */
+.hidden {
+	bottom: -100vh;
+}
+
+.keyboard {
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	transition: .3s ease-in-out;
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+	margin-bottom: calc(100vh - 688px);
+}
+
+.button-keyboard {
+	width: 114px;
+    margin-top: 254px;
+    position: absolute;
+}
+
+.input-keyboard {
+	width: 343px;
+}
