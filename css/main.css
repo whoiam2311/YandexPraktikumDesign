@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost');
 
-/* Основные настройки  */
+/* ОСНОВНЫЕ НАСТРОЙКИ  */
 
 * {
 	box-sizing: border-box;
@@ -51,7 +51,6 @@ nav {
 }
 
 .screen {
-	/* height: 600px; */
 	position: absolute;
 	transition: ease-in-out 0s;
 }

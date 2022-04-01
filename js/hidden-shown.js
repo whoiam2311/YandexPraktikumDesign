@@ -2,7 +2,7 @@ const search = document.querySelector("#searchCurrent"),
   hidden = document.querySelectorAll(".hidden"),
   storage = document.querySelector("#storageCurrent");
 visBtn = document.querySelector("#visibleBtn");
-visStr = document.querySelector(".storage");
+visStr = document.querySelector("#hiddenBtn");
 
 search.onclick = () => {
   hidden[0].classList.remove("hidden");

@@ -7,13 +7,14 @@
 	<title>Player</title>
 
 	<!-- Импортируем css стили  -->
-	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/firstScreen.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/secondScreen.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/thirdScreen.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/toggle.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/storage.css'>
-
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/firstScreen.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/secondScreen.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/thirdScreen.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/toggle.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/storage.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/checkbox.css">
+	
 </head>
 <body>
 	<main>
@@ -321,7 +322,7 @@
 			</div>
 			<div class="storage hidden">
 		
-				<span class="storage-visibility-btn" id="visBtnSett">
+				<span class="storage-visibility-btn" id="hiddenBtn">
 					<div class="storage-visibility-btn_line"></div>
 				</span>
 		
@@ -361,33 +362,26 @@
 					<h1>Скорость загрузки</h1>
 					<div class="menu-items">
 						<div class="item-check">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0C18.6289 0 24 5.37258 24 12C24 18.6289 18.6274 24 12 24C5.37113 24 0 18.6274 0 12C0 5.37113 5.37258 0 12 0ZM12 1.5C6.20044 1.5 1.5 6.20005 1.5 12C1.5 17.7996 6.20005 22.5 12 22.5C17.7996 22.5 22.5 17.8 22.5 12C22.5 6.20044 17.8 1.5 12 1.5Z" fill="#787880" fill-opacity="0.32"/>
-							</svg>
-							<div class="title-check">
-								<h2>Низкая</h2>
+							<div class="checkbox">
+								<input class="custom-checkbox" type="checkbox" id="color-1" name="color-1">
+								<label for="color-1" class="title-check">Низкая</label>
 							</div>
 						</div>
 						<div class="item-check">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0C18.6289 0 24 5.37258 24 12C24 18.6289 18.6274 24 12 24C5.37113 24 0 18.6274 0 12C0 5.37113 5.37258 0 12 0ZM12 1.5C6.20044 1.5 1.5 6.20005 1.5 12C1.5 17.7996 6.20005 22.5 12 22.5C17.7996 22.5 22.5 17.8 22.5 12C22.5 6.20044 17.8 1.5 12 1.5Z" fill="#787880" fill-opacity="0.32"/>
-							</svg>
-							<div class="title-check">
-								<h2>Средняя</h2>
+							<div class="checkbox">
+								<input class="custom-checkbox" type="checkbox" id="color-2" name="color-2">
+								<label for="color-2" class="title-check">Средняя</label>
 							</div>
 						</div>
 						<div class="item-check">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM18.2071 9.20711C18.5976 8.81658 18.5976 8.18342 18.2071 7.79289C17.8166 7.40237 17.1834 7.40237 16.7929 7.79289L10 14.5858L7.20711 11.7929C6.81658 11.4024 6.18342 11.4024 5.79289 11.7929C5.40237 12.1834 5.40237 12.8166 5.79289 13.2071L9.29289 16.7071C9.68342 17.0976 10.3166 17.0976 10.7071 16.7071L18.2071 9.20711Z" fill="#82D7FB"/>
-							</svg>
-							<div class="title-check">
-								<h2>Высокая</h2>
+							<div class="checkbox">
+								<input class="custom-checkbox" type="checkbox" id="color-3" name="color-3">
+								<label for="color-3" class="title-check">Высокая</label>
+							</div>
 							</div>
 						</div>
 					</div>
-				</div>
-		
-		
+
 				<div class="chapters">
 					<h1>Хранилище</h1>
 					<div class="menu-items">
