@@ -52,7 +52,7 @@ nav {
 
 .screen {
 	position: absolute;
-	transition: ease-in-out 0s;
+	transition: ease-in-out 0.3s;
 }
 
 .right {
